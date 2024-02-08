@@ -1,0 +1,103 @@
+<resources>
+
+    <string-array name="preference_color_entries">
+        <item>@string/preferences_color_blue</item>
+        <item>@string/preferences_color_orange</item>
+        <item>@string/preferences_color_green</item>
+        <item>@string/preferences_color_red</item>
+        <item>@string/preferences_color_purple</item>
+    </string-array>
+
+    <string-array name="preference_color_values" translatable="false">
+        <item>blue</item>
+        <item>orange</item>
+        <item>green</item>
+        <item>red</item>
+        <item>purple</item>
+    </string-array>
+
+    <string-array name="preference_color_entries_v31">
+        <item>@string/preferences_color_material_you</item>
+        <item>@string/preferences_color_blue</item>
+        <item>@string/preferences_color_orange</item>
+        <item>@string/preferences_color_green</item>
+        <item>@string/preferences_color_red</item>
+        <item>@string/preferences_color_purple</item>
+    </string-array>
+
+    <string-array name="preference_color_values_v31" translatable="false">
+        <item>material_you</item>
+        <item>blue</item>
+        <item>orange</item>
+        <item>green</item>
+        <item>red</item>
+        <item>purple</item>
+    </string-array>
+
+    <string-array name="preference_theme_entries">
+        <item>@string/preferences_switch_system_theme_label</item>
+        <item>@string/preferences_switch_light_theme_label</item>
+        <item>@string/preferences_switch_dark_theme_label</item>
+        <item>@string/preferences_switch_black_theme_label</item>
+    </string-array>
+
+    <string-array name="preference_theme_values" translatable="false">
+        <item>system</item>
+        <item>light</item>
+        <item>dark</item>
+        <item>black</item>
+    </string-array>
+
+    <string-array name="preference_remote_api_choose_entries">
+        <item>@string/preferences_remote_api_food_label</item>
+        <item>@string/preferences_remote_api_cosmetic_label</item>
+        <item>@string/preferences_remote_api_pet_food_label</item>
+        <item>@string/preferences_remote_api_musicbrainz_label</item>
+    </string-array>
+
+    <string-array name="preference_remote_api_choose_values" translatable="false">
+        <item>@string/preferences_entry_value_food</item>
+        <item>@string/preferences_entry_value_cosmetic</item>
+        <item>@string/preferences_entry_value_pet_food</item>
+        <item>@string/preferences_entry_value_musicbrainz</item>
+    </string-array>
+
+    <string-array name="preference_search_engine_entries">
+        <item>@string/google_label</item>
+        <item>@string/bing_label</item>
+        <item>@string/duckduckgo_label</item>
+        <item>@string/startpage_label</item>
+        <item>@string/brave_search_label</item>
+        <item>@string/qwant_label</item>
+        <item>@string/ecosia_label</item>
+        <item>@string/lilo_label</item>
+        <item>@string/preferences_default</item>
+    </string-array>
+
+    <string-array name="preference_search_engine_values" translatable="false">
+        <item>google</item>
+        <item>bing</item>
+        <item>duckduckgo</item>
+        <item>startpage</item>
+        <item>bravesearch</item>
+        <item>qwant</item>
+        <item>ecosia</item>
+        <item>lilo</item>
+        <item>default</item>
+    </string-array>
+
+    <string-array name="preference_barcode_generation_error_correction_level_entries">
+        <item>@string/qr_code_error_correction_level_name_low</item>
+        <item>@string/qr_code_error_correction_level_name_medium</item>
+        <item>@string/qr_code_error_correction_level_name_quartile</item>
+        <item>@string/qr_code_error_correction_level_name_high</item>
+    </string-array>
+
+    <string-array name="preference_barcode_generation_error_correction_level_values" translatable="false">
+        <item>low</item>
+        <item>medium</item>
+        <item>quartile</item>
+        <item>high</item>
+    </string-array>
+
+</resources>

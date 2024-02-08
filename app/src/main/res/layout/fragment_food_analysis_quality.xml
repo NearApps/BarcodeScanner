@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.github.nearapps.barcodescanner.presentation.customView.ExpandableCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:isOpen="false"
+    tools:context=".presentation.views.fragments.barcodeAnalysis.analysis.foodProduct.overview.FoodAnalysisQualityFragment">
+
+        <!-- Header -->
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:id="@+id/fragment_food_product_quality_texts_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toStartOf="@id/fragment_food_product_quality_image_view"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true">
+
+                        <!-- Title -->
+                        <TextView
+                            android:id="@+id/fragment_food_product_quality_title_text_view"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            style="@style/AppTheme.TextView.Appearance.Title.Primary.Max" />
+
+                        <!-- Quality -->
+                        <TextView
+                            android:id="@+id/fragment_food_product_quality_subtitle_text_view"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/fragment_food_product_quality_title_text_view"
+                            style="@style/AppTheme.TextView.Appearance.Standard.Secondary.Italic" />
+
+                </RelativeLayout>
+
+                <ImageView
+                    android:id="@+id/fragment_food_product_quality_image_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxHeight="@dimen/image_label_max_height"
+                    android:adjustViewBounds="true"
+                    android:layout_marginStart="@dimen/standard_margin"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:contentDescription="@string/image_view_description_image" />
+
+        </RelativeLayout>
+
+        <!-- Body -->
+        <TextView
+            android:id="@+id/fragment_food_product_quality_description_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textIsSelectable="true"
+            style="@style/AppTheme.TextView.Appearance.Standard.Secondary.Italic" />
+
+</com.github.nearapps.barcodescanner.presentation.customView.ExpandableCardView>

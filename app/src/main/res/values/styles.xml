@@ -1,0 +1,268 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Toolbar -->
+    <style name="AppTheme.ToolBar.TextAppearance" parent="AppTheme.TextView.Appearance.Title.Primary.Max">
+        <item name="textSize">@dimen/toolbar_text_size</item>
+        <item name="android:textSize">@dimen/toolbar_text_size</item>
+    </style>
+
+    <!-- TabLayout -->
+    <style name="AppTheme.TabLayout.TextAppearance" parent="AppTheme.TextView.Appearance.Title.Primary.Max">
+        <item name="fontFamily">sans-serif-medium</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="tabIndicatorColor">?colorPrimary</item>
+        <item name="tabSelectedTextColor">?colorPrimary</item>
+    </style>
+
+    <!-- TextView: Title -->
+    <style name="AppTheme.TextView.Appearance.Title.Primary.Max" parent="">
+        <item name="fontFamily">sans-serif-black</item>
+        <item name="android:fontFamily">sans-serif-black</item>
+        <item name="textSize">@dimen/title_text_size</item>
+        <item name="android:textSize">@dimen/title_text_size</item>
+        <item name="textColor">?android:attr/textColorPrimary</item>
+        <item name="android:textColor">?android:attr/textColorPrimary</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="AppTheme.TextView.Appearance.Title.Primary.Min" parent="AppTheme.TextView.Appearance.Title.Primary.Max">
+        <item name="textSize">@dimen/sub_title_text_size</item>
+        <item name="android:textSize">@dimen/sub_title_text_size</item>
+    </style>
+
+    <style name="AppTheme.TextView.Appearance.Title.Variant" parent="AppTheme.TextView.Appearance.Title.Primary.Min">
+        <item name="textColor">?colorPrimary</item>
+        <item name="android:textColor">?colorPrimary</item>
+    </style>
+
+    <!-- TextView: Subtitle -->
+    <style name="AppTheme.TextView.Appearance.Subtitle.Primary" parent="AppTheme.TextView.Appearance.Standard.Primary">
+        <item name="textSize">@dimen/sub_title_text_size</item>
+        <item name="android:textSize">@dimen/sub_title_text_size</item>
+    </style>
+
+    <style name="AppTheme.TextView.Appearance.Subtitle.Secondary" parent="AppTheme.TextView.Appearance.Standard.Secondary">
+        <item name="textSize">@dimen/sub_title_text_size</item>
+        <item name="android:textSize">@dimen/sub_title_text_size</item>
+    </style>
+
+    <!-- TextView: Standard Text -->
+    <style name="AppTheme.TextView.Appearance.Standard.Primary" parent ="">
+        <item name="fontFamily">sans-serif-medium</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="textSize">@dimen/standard_text_size</item>
+        <item name="android:textSize">@dimen/standard_text_size</item>
+        <item name="textColor">?android:attr/textColorPrimary</item>
+        <item name="android:textColor">?android:attr/textColorPrimary</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="AppTheme.TextView.Appearance.Standard.Primary.Italic" parent="AppTheme.TextView.Appearance.Standard.Primary">
+        <item name="fontFamily">sans-serif-medium</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:textStyle">italic</item>
+    </style>
+
+    <style name="AppTheme.TextView.Appearance.Standard.Secondary" parent="AppTheme.TextView.Appearance.Standard.Primary">
+        <item name="textColor">?android:attr/textColorSecondary</item>
+        <item name="android:textColor">?android:attr/textColorSecondary</item>
+    </style>
+
+    <style name="AppTheme.TextView.Appearance.Standard.Secondary.Italic" parent="AppTheme.TextView.Appearance.Standard.Secondary">
+        <item name="fontFamily">sans-serif-medium</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:textStyle">italic</item>
+    </style>
+
+    <style name="AppTheme.TextView.Appearance.Standard.Primary.Error" parent="AppTheme.TextView.Appearance.Standard.Primary">
+        <item name="android:textColor">?colorNegative</item>
+    </style>
+
+    <!-- CardView -->
+    <style name="AppTheme.CardView.Material3" parent="@style/Widget.Material3.CardView.Elevated">
+        <item name="cardUseCompatPadding">true</item>
+        <item name="cardCornerRadius">@dimen/card_standard_corner_radius</item>
+        <item name="cardElevation">@dimen/card_elevation</item>
+        <item name="cardBackgroundColor">?colorSurface</item>
+    </style>
+
+    <style name="AppTheme.CardView.Material3.BlackTheme" parent="@style/AppTheme.CardView.Material3">
+        <item name="strokeColor">?colorOutline</item>
+        <item name="strokeWidth">@dimen/stroke_width</item>
+    </style>
+
+    <!-- BottomNavigationView -->
+    <style name="AppTheme.BottomNavigationView.Style" parent="Widget.Material3.BottomNavigationView">
+        <item name="android:background">?colorSurface</item>
+        <item name="itemActiveIndicatorStyle">@style/AppTheme.BottomNavigationView.ActiveIndicator.Style</item>
+        <item name="elevation">1dp</item>
+    </style>
+
+    <style name="AppTheme.BottomNavigationView.ActiveIndicator.Style" parent="Widget.Material3.BottomNavigationView.ActiveIndicator">
+        <item name="android:color">?colorSecondaryContainer</item>
+    </style>
+
+    <!-- NavigationRailView -->
+    <style name="AppTheme.NavigationRailView.Style" parent="Widget.Material3.NavigationRailView">
+        <item name="android:background">?android:colorBackground</item>
+        <item name="itemActiveIndicatorStyle">@style/AppTheme.NavigationRailView.ActiveIndicator.Style</item>
+    </style>
+
+    <style name="AppTheme.NavigationRailView.ActiveIndicator.Style" parent="Widget.Material3.NavigationRailView.ActiveIndicator">
+        <item name="android:color">?colorSecondaryContainer</item>
+    </style>
+
+    <!-- Slider -->
+    <style name="AppTheme.Slider" parent="Widget.Material3.Slider">
+        <item name="thumbColor">?colorPrimary</item>
+        <item name="trackColor">?colorSecondaryContainer</item>
+        <item name="haloColor">?colorSecondaryContainer</item>
+    </style>
+
+    <style name="AppTheme.SeekBarPreferenceCompat.Material3" parent="Preference.SeekBarPreference.Material">
+        <item name="showSeekBarValue">true</item>
+    </style>
+
+    <!-- Switch -->
+    <style name="AppTheme.Switch.Material3" parent="Widget.Material3.CompoundButton.MaterialSwitch" />
+
+    <style name="AppTheme.SwitchPreferenceCompat.Material3" parent="Preference.SwitchPreferenceCompat.Material">
+        <item name="android:widgetLayout">@layout/template_preference_material_switch</item>
+    </style>
+
+    <!-- Chip -->
+    <style name="AppTheme.Chip" parent="Widget.Material3.Chip.Assist">
+        <item name="chipBackgroundColor">?colorSurface</item>
+        <item name="android:textAppearance">@style/AppTheme.Chip.Text</item>
+    </style>
+
+    <style name="AppTheme.Chip.Text" parent="TextAppearance.MaterialComponents.Chip">
+        <item name="android:textColor">?android:attr/textColorPrimary</item>
+        <item name="android:textSize">@dimen/min_text_size</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+    </style>
+
+    <!-- TextInputLayout -->
+    <style name="AppTheme.TextInputLayoutStyle" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="startIconTint">?android:textColorSecondary</item>
+        <!--<item name="materialThemeOverlay">@style/AppTheme.ThemeOverlay.App.TextInputLayout</item>-->
+    </style>
+
+    <style name="AppTheme.ThemeOverlay.App.TextInputLayout" parent="">
+
+        <!-- Normal -->
+        <item name="colorOnSurface">?android:textColorSecondary</item>
+
+        <!-- Error -->
+        <item name="colorError">?colorError</item>
+
+        <!-- Text Appearance styles -->
+        <item name="textAppearanceSubtitle1">@style/AppTheme.TextView.Appearance.Subtitle.Secondary</item>
+        <item name="textAppearanceCaption">@style/AppTheme.InputEditTextCaptionFont</item>
+
+        <!-- Style -->
+        <item name="editTextStyle">@style/Widget.MaterialComponents.TextInputEditText.OutlinedBox</item>
+    </style>
+
+    <style name="AppTheme.InputEditTextCaptionFont" parent="">
+        <item name="fontFamily">sans-serif-medium</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="textSize">@dimen/min_text_size</item>
+        <item name="android:textSize">@dimen/min_text_size</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <!-- AutoCompleteTextView -->
+    <style name="AppTheme.AutoCompleteTextView.TextInputLayoutStyle" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense.ExposedDropdownMenu">
+        <item name="materialThemeOverlay">@style/AppTheme.AutoCompleteTextView.TextInputLayoutThemeOverlay</item>
+    </style>
+
+    <style name="AppTheme.AutoCompleteTextView.TextInputLayoutThemeOverlay" parent="">
+        <item name="fontFamily">sans-serif-medium</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="textSize">@dimen/standard_text_size</item>
+        <item name="android:textSize">@dimen/standard_text_size</item>
+        <item name="android:textStyle">normal</item>
+
+        <item name="autoCompleteTextViewStyle">@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense.ExposedDropdownMenu</item>
+    </style>
+
+    <!-- Material Button -->
+    <style name="AppTheme.MaterialButton" parent="Widget.Material3.Button">
+        <item name="android:textSize">@dimen/sub_title_text_size</item>
+        <item name="android:textColor">?colorOnPrimary</item>
+        <item name="backgroundTint">?colorPrimary</item>
+        <item name="android:fontFamily">sans-serif-black</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <!-- DialogTextButtonStyle -->
+    <style name="AppTheme.Dialog.TextButton.Style" parent="Widget.Material3.Button.TextButton.Dialog">
+        <item name="android:textSize">@dimen/sub_title_text_size</item>
+        <item name="android:fontFamily">sans-serif-black</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <!-- AlertDialog -->
+    <style name="AppTheme.MaterialAlertDialog" parent="@style/ThemeOverlay.Material3.MaterialAlertDialog.Centered">
+
+        <!-- Overlay -->
+        <item name="android:dialogCornerRadius" tools:targetApi="p">@dimen/dialog_corner_radius</item>
+        <item name="dialogCornerRadius">@dimen/dialog_corner_radius</item>
+        <!--<item name="android:colorBackground">?dialogBackgroundColor</item>-->
+        <item name="android:colorBackground">?colorSurface</item>
+
+        <!-- Title Text -->
+        <item name="android:textSize">@dimen/title_text_size</item>
+        <item name="fontFamily">sans-serif-black</item>
+        <item name="android:textStyle">normal</item>
+
+        <!-- Pour les checked button dans preferences -->
+        <item name="android:checkedTextViewStyle">@style/AppTheme.TextView.Appearance.Subtitle.Primary</item>
+        <item name="materialAlertDialogBodyTextStyle">@style/AppTheme.TextView.Appearance.Standard.Primary</item>
+
+        <!-- Buttons -->
+        <item name="buttonBarPositiveButtonStyle">@style/AppTheme.MaterialButton</item>
+        <item name="buttonBarNegativeButtonStyle">@style/AppTheme.Dialog.TextButton.Style</item>
+        <item name="buttonBarNeutralButtonStyle">@style/AppTheme.Dialog.TextButton.Style</item>
+    </style>
+
+    <style name="AppTheme.MaterialAlertDialog.BlackTheme" parent="@style/AppTheme.MaterialAlertDialog">
+        <!--<item name="strokeColor">#40ffffff</item>
+        <item name="strokeWidth">@dimen/stroke_width</item>-->
+        <item name="android:windowBackground">@drawable/dialog_background_stroke</item>
+        <!--<item name="android:colorBackground">?colorPrimary</item>-->
+
+
+    </style>
+
+    <!-- DateTimePicker -->
+    <style name="AppTheme.DateTimePickerTheme" parent="ThemeOverlay.Material3.Dialog">
+
+        <!-- Overlay -->
+        <item name="android:dialogCornerRadius" tools:targetApi="p">@dimen/dialog_corner_radius</item>
+        <item name="dialogCornerRadius">@dimen/dialog_corner_radius</item>
+        <!--<item name="android:background">@drawable/dialog_background</item>-->
+        <item name="android:windowBackground">@drawable/dialog_background</item>
+
+        <!-- Date / Time Style -->
+        <item name="android:datePickerStyle">@style/ThemeOverlay.Material3.MaterialCalendar</item>
+        <item name="android:timePickerStyle">@style/ThemeOverlay.Material3.MaterialTimePicker</item>
+
+        <!-- Buttons -->
+        <item name="android:buttonBarPositiveButtonStyle">@style/AppTheme.MaterialButton</item>
+        <item name="android:buttonBarNegativeButtonStyle">@style/AppTheme.Dialog.TextButton.Style</item>
+        <item name="android:buttonBarNeutralButtonStyle">@style/AppTheme.Dialog.TextButton.Style</item>
+    </style>
+
+    <style name="AppTheme.DateTimePickerTheme.BlackTheme" parent="AppTheme.DateTimePickerTheme">
+        <item name="android:windowBackground">@drawable/dialog_background_stroke</item>
+    </style>
+
+    <!-- Overflow Menu (Placement de Item Menu) -->
+    <style name="OverflowMenu" parent="Widget.AppCompat.PopupMenu.Overflow">
+        <item name="android:overlapAnchor">false</item>
+        <item name="android:dropDownVerticalOffset">4.0dp</item>
+    </style>
+
+</resources>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="@dimen/light_margin"
+    android:paddingBottom="@dimen/light_margin"
+    android:paddingStart="@dimen/standard_margin"
+    android:paddingEnd="@dimen/standard_margin"
+    android:gravity="center"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/recycler_view_item_veggie_ingredient_text_view"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight=".3"
+        android:textAlignment="textStart"
+        android:textIsSelectable="true"
+        style="@style/AppTheme.TextView.Appearance.Standard.Primary" />
+
+    <TextView
+        android:id="@+id/recycler_view_item_veggie_vegan_text_view"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight=".3"
+        android:textAlignment="textEnd"
+        android:textIsSelectable="true"
+        style="@style/AppTheme.TextView.Appearance.Standard.Primary.Italic" />
+
+    <Space
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight=".1" />
+
+    <TextView
+        android:id="@+id/recycler_view_item_veggie_vegetarian_text_view"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight=".3"
+        android:textAlignment="textEnd"
+        android:textIsSelectable="true"
+        style="@style/AppTheme.TextView.Appearance.Standard.Primary.Italic" />
+</LinearLayout>

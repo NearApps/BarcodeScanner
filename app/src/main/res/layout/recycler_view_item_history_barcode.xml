@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/recycler_view_item_history_barcode_background_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginEnd="@dimen/standard_margin">
+
+        <TextView
+            android:id="@+id/recycler_view_item_history_barcode_delete_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toStartOf="@id/recycler_view_item_history_barcode_delete_icon_image_view"
+            android:textAlignment="viewStart"
+            android:text="@string/delete_label"
+            style="@style/AppTheme.TextView.Appearance.Title.Primary.Min" />
+
+        <ImageView
+            android:id="@+id/recycler_view_item_history_barcode_delete_icon_image_view"
+            android:layout_width="@dimen/icon_standard_size"
+            android:layout_height="@dimen/icon_standard_size"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/baseline_delete_forever_24"
+            android:contentDescription="@string/image_view_description_icon" />
+
+    </RelativeLayout>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/recycler_view_item_history_barcode_foreground_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:cardUseCompatPadding="false">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:padding="@dimen/large_margin">
+
+            <ImageView
+                android:id="@+id/recycler_view_item_history_barcode_image_view"
+                android:layout_width="@dimen/icon_x_large_size"
+                android:layout_height="@dimen/icon_x_large_size"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="@dimen/large_margin"
+                android:background="@drawable/circle"
+                app:backgroundTint="?colorPrimary"
+                app:tint="?colorOnPrimary"
+                android:contentDescription="@string/image_view_description_type_icon" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/recycler_view_item_history_barcode_image_view"
+                android:layout_centerVertical="true">
+
+                <RelativeLayout
+                    android:id="@+id/recycler_view_item_history_barcode_entitled_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/recycler_view_item_history_barcode_entitled_text_view"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/standard_margin"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_toStartOf="@id/recycler_view_item_history_barcode_format_text_view"
+                        android:textAlignment="viewStart"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        style="@style/AppTheme.TextView.Appearance.Title.Primary.Min" />
+
+                    <TextView
+                        android:id="@+id/recycler_view_item_history_barcode_format_text_view"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/light_margin"
+                        android:layout_centerVertical="true"
+                        android:layout_toStartOf="@id/recycler_view_item_history_barcode_icon_image_view"
+                        style="@style/AppTheme.TextView.Appearance.Standard.Secondary" />
+
+                    <ImageView
+                        android:id="@+id/recycler_view_item_history_barcode_icon_image_view"
+                        android:layout_width="@dimen/icon_light_size"
+                        android:layout_height="@dimen/icon_light_size"
+                        android:layout_marginStart="@dimen/light_margin"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        app:tint="?android:attr/textColorSecondary"
+                        android:contentDescription="@string/image_view_description_bar_code" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@id/recycler_view_item_history_barcode_entitled_layout"
+                    android:layout_marginTop="@dimen/light_margin">
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_toStartOf="@id/recycler_view_item_history_barcode_date_image_view">
+                        <TextView
+                            android:id="@+id/recycler_view_item_history_barcode_content_text_view"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_alignParentStart="true"
+                            android:layout_marginEnd="@dimen/standard_margin"
+                            android:textAlignment="viewStart"
+                            android:ellipsize="end"
+                            android:maxLines="1"
+                            style="@style/AppTheme.TextView.Appearance.Standard.Secondary.Italic" />
+
+                        <ImageView
+                            android:id="@+id/recycler_view_item_history_barcode_origin_flag_image_view"
+                            android:layout_width="@dimen/icon_light_size"
+                            android:layout_height="@dimen/icon_light_size"
+                            android:layout_centerVertical="true"
+                            android:layout_toEndOf="@id/recycler_view_item_history_barcode_content_text_view"
+                            android:contentDescription="@string/image_view_description_flag" />
+                    </RelativeLayout>
+
+                    <ImageView
+                        android:id="@+id/recycler_view_item_history_barcode_date_image_view"
+                        android:layout_width="@dimen/icon_standard_size"
+                        android:layout_height="@dimen/icon_standard_size"
+                        android:layout_centerVertical="true"
+                        android:layout_toStartOf="@id/recycler_view_item_history_barcode_date_text_view"
+                        android:src="@drawable/baseline_history_24"
+                        app:tint="?android:attr/textColorSecondary"
+                        android:contentDescription="@string/image_view_description_icon" />
+
+                    <TextView
+                        android:id="@+id/recycler_view_item_history_barcode_date_text_view"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="@dimen/light_margin"
+                        android:layout_alignParentEnd="true"
+                        style="@style/AppTheme.TextView.Appearance.Standard.Secondary" />
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+        </RelativeLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+</FrameLayout>

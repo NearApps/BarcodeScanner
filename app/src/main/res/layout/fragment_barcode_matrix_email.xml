@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".presentation.views.fragments.barcodeAnalysis.contents.BarcodeMatrixEmailFragment">
+
+    <com.github.nearapps.barcodescanner.presentation.customView.BarcodeParsedView
+        android:id="@+id/fragment_barcode_matrix_email_address_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/standard_margin"
+        app:title_text="@string/matrix_email_recipient_label" />
+
+    <com.github.nearapps.barcodescanner.presentation.customView.BarcodeParsedView
+        android:id="@+id/fragment_barcode_matrix_email_cc_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/x_large_margin"
+        android:layout_below="@id/fragment_barcode_matrix_email_address_layout"
+        app:title_text="@string/matrix_email_cc_label" />
+
+    <com.github.nearapps.barcodescanner.presentation.customView.BarcodeParsedView
+        android:id="@+id/fragment_barcode_matrix_email_bcc_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/x_large_margin"
+        android:layout_below="@id/fragment_barcode_matrix_email_cc_layout"
+        app:title_text="@string/matrix_email_bcc_label" />
+
+    <com.github.nearapps.barcodescanner.presentation.customView.BarcodeParsedView
+        android:id="@+id/fragment_barcode_matrix_email_subject_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/x_large_margin"
+        android:layout_below="@id/fragment_barcode_matrix_email_bcc_layout"
+        app:title_text="@string/matrix_subject_label" />
+
+    <com.github.nearapps.barcodescanner.presentation.customView.BarcodeParsedView
+        android:id="@+id/fragment_barcode_matrix_email_body_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/x_large_margin"
+        android:layout_below="@id/fragment_barcode_matrix_email_subject_layout"
+        app:title_text="@string/matrix_body_label" />
+
+</RelativeLayout>

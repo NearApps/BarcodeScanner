@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="MaterialYouLightTheme" parent="ThemeOverlay.Material3.DynamicColors.Light">
+
+        <item name="dialogBackgroundColor">@android:color/system_neutral1_10</item>
+        <item name="colorControlNormal">?android:attr/textColorPrimary</item>
+
+        <!-- Text Font / Size / Style -->
+        <item name="fontFamily">@string/default_font</item>
+        <item name="android:fontFamily">@string/default_font</item>
+        <item name="textSize">@dimen/standard_text_size</item>
+        <item name="android:textSize">@dimen/standard_text_size</item>
+        <item name="android:textStyle">normal</item>
+
+        <!-- Custom colors -->
+        <item name="colorPositive">@color/light_color_positive</item>
+        <item name="colorMedium">@color/light_color_medium</item>
+        <item name="colorNegative">@color/light_color_negative</item>
+        <item name="colorUnknown">@color/light_color_unknown</item>
+        <item name="colorRow">@color/light_table_row</item>
+
+        <!-- Components -->
+        <item name="cardViewStyle">@style/AppTheme.CardView.Material3</item>
+        <item name="materialCardViewStyle">@style/AppTheme.CardView.Material3</item>
+        <item name="materialButtonStyle">@style/AppTheme.MaterialButton</item>
+        <item name="bottomNavigationStyle">@style/AppTheme.BottomNavigationView.Style</item>
+        <item name="navigationRailStyle">@style/AppTheme.NavigationRailView.Style</item>
+        <item name="switchStyle">@style/AppTheme.Switch.Material3</item>
+        <item name="materialSwitchStyle">@style/AppTheme.Switch.Material3</item>
+        <item name="switchPreferenceCompatStyle">@style/AppTheme.SwitchPreferenceCompat.Material3</item>
+        <item name="seekBarPreferenceStyle">@style/AppTheme.SeekBarPreferenceCompat.Material3</item>
+        <item name="chipStyle">@style/AppTheme.Chip</item>
+        <item name="sliderStyle">@style/AppTheme.Slider</item>
+        <item name="alertDialogTheme">@style/AppTheme.MaterialAlertDialog</item>
+        <item name="materialAlertDialogTheme">@style/AppTheme.MaterialAlertDialog</item>
+        <item name="android:datePickerDialogTheme">@style/AppTheme.DateTimePickerTheme</item>
+        <item name="android:timePickerDialogTheme">@style/AppTheme.DateTimePickerTheme</item>
+
+        <item name="actionOverflowMenuStyle">@style/OverflowMenu</item>
+
+        <!-- System -->
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:windowLightNavigationBar">true</item>
+        <item name="android:windowFullscreen">false</item>
+    </style>
+
+    <style name="MaterialYouDarkTheme" parent="ThemeOverlay.Material3.DynamicColors.Dark">
+
+        <item name="dialogBackgroundColor">@android:color/system_neutral2_800</item>
+        <item name="colorControlNormal">?android:attr/textColorPrimary</item>
+
+        <!-- Text Font / Size / Style -->
+        <item name="fontFamily">@string/default_font</item>
+        <item name="android:fontFamily">@string/default_font</item>
+        <item name="textSize">@dimen/standard_text_size</item>
+        <item name="android:textSize">@dimen/standard_text_size</item>
+        <item name="android:textStyle">normal</item>
+
+        <!-- Custom colors -->
+        <item name="colorPositive">@color/dark_color_positive</item>
+        <item name="colorMedium">@color/dark_color_medium</item>
+        <item name="colorNegative">@color/dark_color_negative</item>
+        <item name="colorUnknown">@color/dark_color_unknown</item>
+        <item name="colorRow">@color/dark_table_row</item>
+
+        <!-- Components -->
+        <item name="cardViewStyle">@style/AppTheme.CardView.Material3</item>
+        <item name="materialCardViewStyle">@style/AppTheme.CardView.Material3</item>
+        <item name="materialButtonStyle">@style/AppTheme.MaterialButton</item>
+        <item name="bottomNavigationStyle">@style/AppTheme.BottomNavigationView.Style</item>
+        <item name="navigationRailStyle">@style/AppTheme.NavigationRailView.Style</item>
+        <item name="switchStyle">@style/AppTheme.Switch.Material3</item>
+        <item name="materialSwitchStyle">@style/AppTheme.Switch.Material3</item>
+        <item name="switchPreferenceCompatStyle">@style/AppTheme.SwitchPreferenceCompat.Material3</item>
+        <item name="seekBarPreferenceStyle">@style/AppTheme.SeekBarPreferenceCompat.Material3</item>
+        <item name="chipStyle">@style/AppTheme.Chip</item>
+        <item name="sliderStyle">@style/AppTheme.Slider</item>
+        <item name="alertDialogTheme">@style/AppTheme.MaterialAlertDialog</item>
+        <item name="materialAlertDialogTheme">@style/AppTheme.MaterialAlertDialog</item>
+        <item name="android:datePickerDialogTheme">@style/AppTheme.DateTimePickerTheme</item>
+        <item name="android:timePickerDialogTheme">@style/AppTheme.DateTimePickerTheme</item>
+
+        <item name="actionOverflowMenuStyle">@style/OverflowMenu</item>
+
+        <!-- System -->
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:windowLightNavigationBar">false</item>
+        <item name="android:windowFullscreen">false</item>
+    </style>
+
+    <style name="MaterialYouBlackTheme" parent="MaterialYouDarkTheme">
+        <item name="cardViewStyle">@style/AppTheme.CardView.Material3.BlackTheme</item>
+        <item name="materialCardViewStyle">@style/AppTheme.CardView.Material3.BlackTheme</item>
+        <item name="alertDialogTheme">@style/AppTheme.MaterialAlertDialog.BlackTheme</item>
+        <item name="materialAlertDialogTheme">@style/AppTheme.MaterialAlertDialog.BlackTheme</item>
+        <item name="android:datePickerDialogTheme">@style/AppTheme.DateTimePickerTheme.BlackTheme</item>
+        <item name="android:timePickerDialogTheme">@style/AppTheme.DateTimePickerTheme.BlackTheme</item>
+        <item name="elevationOverlayEnabled">false</item>
+
+        <item name="android:colorBackground">@color/black_theme_background</item>
+        <item name="colorSurface">@color/black_theme_surface</item>
+        <item name="colorOutline">@color/black_theme_outline</item>
+    </style>
+
+    <style name="SplashScreenTheme" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="android:windowSplashScreenBackground">@color/icon_background</item>
+        <item name="android:windowSplashScreenAnimatedIcon">@drawable/ic_splash_screen_icon_avd_anim</item>
+        <item name="android:windowSplashScreenAnimationDuration">1000</item>
+    </style>
+</resources>
