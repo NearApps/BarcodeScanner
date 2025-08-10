@@ -49,6 +49,8 @@ Ideal para uso personal o profesional, integra bases de datos abiertas para ofre
 
 <p align="center">
   <img src="assets/screenshot/phone/result 1 - product.png" width="192" />
+  <img src="assets/screenshot/phone/result 2 - product.png" width="192" />
+  <img src="assets/screenshot/phone/result 2 - product.png" width="192" />
   <img src="assets/screenshot/phone/screen 1 -scanner.png" width="192" />
   <img src="assets/screenshot/phone/screen 2 -history.png" width="192" />
   <img src="assets/screenshot/phone/screen 3 -code types.png" width="192" />
